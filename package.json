@@ -1,0 +1,22 @@
+{
+  "name": "service_downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.14.9",
+    "@types/node-fetch": "^2.6.11",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "typescript": "^5.5.2"
+  },
+  "devDependencies": {
+    "@types/node-cron": "^3.0.11"
+  }
+}
