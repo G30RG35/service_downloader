@@ -15,7 +15,13 @@ if (!fs.existsSync(downloadFolder)) {
 
 // Función para descargar la página web y tomar captura de pantalla
 async function descargarPaginaYCaptura(): Promise<void> {
-    const browser = await puppeteer.launch({ headless: false, slowMo: 300});
+    
+    const browser = await puppeteer.launch({
+        executablePath: '/usr/bin/chromium-browser', // Ajusta esta ruta según sea necesario
+        headless: true, // Puedes dejar esto en true para despliegues en servidor
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+
     const page = await browser.newPage();
     try {
         await page.goto(url, { waitUntil: 'networkidle2' });
