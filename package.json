@@ -14,6 +14,7 @@
     "@types/node-fetch": "^2.6.11",
     "node-cron": "^3.0.3",
     "node-fetch": "^2.7.0",
+    "puppeteer": "^22.12.1",
     "typescript": "^5.5.2"
   },
   "devDependencies": {
